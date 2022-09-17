@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
+
 <body>
-    <main class="main-container">
-<h1>Helloworld</h>
-    </main>
+
+    <section class="container">
+        <!-- start of form -->
+        <div class="form">
+            <label for="nameInput">
+                CARDHOLDER NAME
+            </label>
+            <input type="text" class="holders-name" placeholder="e.g. Jane Appleseed">
+            <label for="card-number"> CARD NUMBER</label>
+            <input type="number" class="card-number" placeholder="e.g 1234 5678 9123 0000" >
+            <div class="mini-labels">
+                <label for="exp-date">Exp. Date (MM/YY)</label>
+               
+                <label for="cvc-input" class="cvc">CVC</label>
+             
+            </div>
+            <div class="mini-inputs">
+                <input type="number" class="exp-date-month" placeholder="MM" autocomplete="off">
+                <input type="number" class="exp-date-year" placeholder=" YY">
+                <input type="number" class="cvc-input" placeholder="e.g. 123">
+            </div>
+            <button class="confirm">Confirm</button>
+        </div>
+         <!-- end of form -->
+
+
+        <div class="card-front">
+            <div class="card-shape">
+                <span class="big-circle"></span>
+            <span class="small-circle"></span>
+            </div>
+             <h1 class="card-number-display" > 0000 0000 0000 0000</h1>
+             <div class="name-date">
+                <h3 class="holders-name-display">JANE APPLESEED</h3>
+            <h3 class="card-date"> 00/00</h3>
+             </div>
+            
+
+        </div>
+
+       
+
+
+        <div class="card-back">
+
+            <h1 class="cvc-display">000</h1>
+
+
+        </div>
+
+
+        <div class="confirmation main" >
+            <img src="./images/icon-complete.svg" alt="confirmation-check" class="confirm-image">
+            <h1 class="thanks"> THANK YOU!</h1>
+            <p> We've added your card details
+                
+            </p>
+
+            <button class="confirm-button"> Continue</button>
+        </div>
+
+
+
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Sunday Famous</a>.
+        </footer>
+    </section>
+
 </body>
+
 </html>
